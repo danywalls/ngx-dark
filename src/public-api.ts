@@ -2,4 +2,4 @@
  * Public API Surface of ng-dark
  */
 
-export * from './lib/ng-dark.module';
+export * from "./lib/ngx-dark.module";

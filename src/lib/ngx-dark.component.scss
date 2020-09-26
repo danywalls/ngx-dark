@@ -1,9 +1,12 @@
 html {
-  transition: filter 0.5s ease-in-out;
+  transition: color 300ms, background-color 300ms;
 }
 .dark-mode {
   filter: invert(1) hue-rotate(180deg);
-  transition: filter 0.5s ease-in-out;
+}
+
+.dark-mode img {
+  filter: invert(1) hue-rotate(180deg);
 }
 
 .onoffswitch {

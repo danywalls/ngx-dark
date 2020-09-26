@@ -1,4 +1,4 @@
-# ng-dark
+# ngx-dark
 
 Add a Dark for Angular apps
 
@@ -13,7 +13,6 @@ This library uses the CSS `invert(1) hue-rotate` to apply the dark to any of you
 Check out the demo in these websites:
 
 - https://danywalls.com
-- https://rocioparedes.com
 
 ## 📖 How to use
 
@@ -22,17 +21,17 @@ ng-dark is easy to use, install the npm package and import it your modules, and 
 ### 📦 Using NPM
 
 ```sh
-npm install ng-dark
+npm install ngx-dark
 ```
 
 Then register the module:
 
 ```javascript
-import { NgDark } from 'ng-dark';
+import { NgxDark } from 'ngx-dark';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, NgDarkModule],
+  imports: [BrowserModule, NgxDarkModule],
 ```
 
 ## ⚙️ Options
@@ -47,16 +46,16 @@ Use the default switcher.
 
 ```html
 <div class="container">
-  <ng-dark> </ng-dark>
+  <ngx-dark> </ngx-dark>
 </div>
 ```
 
 Use a custom icon or button
 
 ```html
-<ng-dark [hideToggle]="true">
+<ngx-dark [hideToggle]="true">
   <span>dark</span>
-</ng-dark>
+</ngx-dark>
 ```
 
 If this project helped you, please star.
