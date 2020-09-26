@@ -1,0 +1,14 @@
+<div (click)="toggleDark()">
+  <ng-content> </ng-content>
+  <div class="onoffswitch" *ngIf="!hideToggle">
+    <input
+      type="checkbox"
+      name="onoffswitch"
+      class="onoffswitch-checkbox"
+      id="myonoffswitch"
+      tabindex="0"
+      (change)="toggleDark()"
+    />
+    <label class="onoffswitch-label" for="myonoffswitch"></label>
+  </div>
+</div>
