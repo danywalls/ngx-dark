@@ -1,12 +1,13 @@
 # ngx-dark
 
-Add a Dark for Angular apps
+Add Dark theme for Angular apps easy.
 
 This library uses the CSS `invert(1) hue-rotate` to apply the dark to any of your websites.
 
 ## Features
 
-- Custom area <ng-content> for apply dark .
+- Use custom icon or element for apply dark .
+- Toggle button, it can be deactive if use custom icon.
 
 ## Demo
 
@@ -16,7 +17,7 @@ Check out the demo in these websites:
 
 ## 📖 How to use
 
-ng-dark is easy to use, install the npm package and import it your modules, and use ng-dark
+ngx-dark is easy to use, install the npm package and import it your modules, and use ng-dark
 
 ### 📦 Using NPM
 
@@ -58,6 +59,4 @@ Use a custom icon or button
 </ngx-dark>
 ```
 
-If this project helped you, please star.
-
-:)
+If this project helped you, or like please share :)
