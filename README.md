@@ -1,62 +1,27 @@
-# ngx-dark
+# Ngxdarkproject
 
-Add Dark theme for Angular apps easy.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
 
-This library uses the CSS `invert(1) hue-rotate` to apply the dark to any of your websites.
+## Development server
 
-## Features
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-- Use custom icon or element for apply dark .
-- Toggle button, it can be deactive if use custom icon.
+## Code scaffolding
 
-## Demo
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Check out the demo in these websites:
+## Build
 
-- https://danywalls.com
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## 📖 How to use
+## Running unit tests
 
-ngx-dark is easy to use, install the npm package and import it your modules, and use ng-dark
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### 📦 Using NPM
+## Running end-to-end tests
 
-```sh
-npm install ngx-dark
-```
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-Then register the module:
+## Further help
 
-```javascript
-import { NgxDark } from 'ngx-dark';
-
-@NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, NgxDarkModule],
-```
-
-## ⚙️ Options
-
-Here are the option availables:
-
-hideToggle: show the default toogle dark button.
-
-### Examples
-
-Use the default switcher.
-
-```html
-<div class="container">
-  <ngx-dark> </ngx-dark>
-</div>
-```
-
-Use a custom icon or button
-
-```html
-<ngx-dark [hideToggle]="true">
-  <span>dark</span>
-</ngx-dark>
-```
-
-If this project helped you, or like please share :)
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
