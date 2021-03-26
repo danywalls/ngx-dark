@@ -1,27 +1,41 @@
-# Ngxdarkproject
+ngx-dark
+Add Dark theme for Angular apps easy.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
+This library uses the CSS invert(1) hue-rotate to apply the dark to any of your websites.
 
-## Development server
+Features
+Use custom icon or element for apply dark .
+Toggle button, it can be deactive if use custom icon.
+Demo
+Check out the demo in these websites:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+https://danywalls.com
+book How to use
+ngx-dark is easy to use, install the npm package and import it your modules, and use ngx-dark
 
-## Code scaffolding
+package Using NPM
+npm install ngx-dark
+Then register the module:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+import { NgxDark } from 'ngx-dark';
 
-## Build
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, NgxDarkModule],
+gear Options
+Here are the option availables:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+hideToggle: show the default toogle dark button.
 
-## Running unit tests
+Examples
+Use the default switcher.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<div class="container">
+  <ngx-dark> </ngx-dark>
+</div>
+Use a custom icon or button
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+<ngx-dark [hideToggle]="true">
+  <span>dark</span>
+</ngx-dark>
+If this project helped you, or like please share :)
